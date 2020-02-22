@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        width: 960px;
+        background-color: #ccc;
+        margin: 0 auto;
+      }
+      h1 {
+        float: left;
+      }
+      nav {
+        float: right;
+      }
+      nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 20px;
+        line-height: 60px;
+      }
+      a:link {
+        text-decoration: none;
+        color: black;
+      }
+      .clearfix::after {
+        /* header 안 내용이 다 float 이기 때문에 0으로 인식됨*/
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="clearfix">
+      <h1><a href="#">Logo</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Member Join</a></li>
+          <li><a href="#">Site map</a></li>
+          <li><a href="#">Location</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

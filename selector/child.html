@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      .fruits li:first-child {
+        /*첫번째 요소의 색상은 빨간색으로 */
+        color: red;
+      }
+      .fruits li:last-child {
+        /* 마지막 요소의 색상은 violet으로 */
+        color: violet;
+      }
+      .fruits li:nth-child(n + 3) {
+        /* 3번째 요소부터 이후 요소들을 선택 */
+        color: blue;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="fruits">
+      <li>딸기</li>
+      <li>사과</li>
+      <li>오렌지</li>
+      <li>망고</li>
+    </ul>
+  </body>
+</html>

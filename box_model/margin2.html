@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .parent {
+      }
+      .child {
+        width: 100px;
+        height: 100px;
+        background: tomato;
+        /*float: left;  옆으로 쌓이게 만들기 위해 */
+        margin: 20px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 마진 중복 
+         형제 요소들의 margin-top과 margin-bottom 이 만났들 때
+         부모 요소의  margin-top과 자식요소의 margin-top이 만났을 때
+         부모 요소의  margin-bottom과 자식 요소의  margin-bottom이 만났을 때
+    -->
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font: 12px/1.6 arial, sans-serif;
+        /*
+            font-size:12px;
+            line-height:1.6;
+            font-family:arial,sans-serif;
+            */
+      }
+      .boxmodel {
+        border: 5px solid black;
+        /* padding: 10px 20px 5px 3px; */
+        width: 500px;
+        padding: 20px;
+        box-sizing: border-box; /* content-box : 기본값*/
+        margin: 100px auto; /*auto 가능*/
+      }
+      .circle {
+        width: 300px;
+        height: 300px;
+        color: #fff;
+        border: 2px solid black;
+        background-color: red;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 5em;
+        line-height: 300px; /*글자를 중간에 오게 하기 위해*/
+      }
+      .box {
+        width: 300px;
+        background-color: chocolate;
+        margin: 20px;
+        border: 3px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxmodel">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore
+        ipsam consectetur molestiae! Maxime sapiente aperiam error nobis
+        voluptas. Sapiente fugiat amet facilis? Quidem id accusantium repellat
+        officia quam doloremque possimus ex debitis, aperiam error maxime, iste
+        blanditiis deserunt fuga iure facere velit excepturi illo voluptates
+        magni esse exercitationem explicabo. Officia velit deserunt libero
+        eligendi ab itaque molestias veritatis! Vitae repudiandae reiciendis
+        tempora mollitia, maiores ipsam natus obcaecati labore eaque
+        voluptatibus, sunt alias voluptatum molestiae, vel a accusamus veniam
+        unde quas voluptates dolores veritatis eum iste laborum nisi! Aperiam
+        accusamus quia omnis beatae voluptas quis necessitatibus ut est fugiat
+        expedita.
+      </p>
+    </div>
+    <div class="circle">
+      circle
+    </div>
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+  </body>
+</html>

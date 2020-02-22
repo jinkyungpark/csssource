@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-wrap: wrap-reverse;
+      }
+      .container .item {
+        width: 200px;
+        height: 100px;
+        border: 4px dashed;
+      }
+      .container .item:first-child {
+        background: red;
+      }
+      .container .item:nth-child(2) {
+        background: blue;
+      }
+      .container .item:nth-child(3) {
+        background: green;
+      }
+      .container .item:nth-child(4) {
+        background: magenta;
+      }
+      .container .item:last-child {
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+    </div>
+  </body>
+</html>

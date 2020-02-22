@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>align-items</title>
+  </head>
+  <style>
+    .container {
+      height: 400px; /* 높이 설정을 하게 되면 아이템들간의 간격이 생겨버림 */
+      border: 2px solid;
+      display: flex;
+      flex-wrap: wrap; /* align-content가 의미가 있으려면 무조건 2줄이상*/
+      /* align-content: stretch; 기본값이니까 안 줘도 늘어남*/
+      align-content: space-around; /* stretch(기본값), flex-start, flex-end, center, space-between, space-around */
+    }
+    .container .item {
+      width: 200px;
+      height: 100px;
+      border: 3px dashed;
+    }
+    .container .item:first-child {
+      background: red;
+    }
+    .container .item:nth-child(2) {
+      background: blue;
+    }
+    .container .item:nth-child(3) {
+      background: green;
+    }
+    .container .item:nth-child(4) {
+      background: magenta;
+    }
+    .container .item:nth-child(5) {
+      background: darkgoldenrod;
+    }
+    .container .item:last-child {
+      background: yellow;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">F</div>
+    </div>
+  </body>
+</html>

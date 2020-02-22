@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* div 자손인 h2 태그를 선택하기 위해서 
+         두 번째 경우를 보면 div 태그 안에 div > nav > h2 에도 적용이
+         되기 때문에 자손 선택자라 부름      
+      */
+      div h2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">css 기본 문법</h1>
+      <h2>자손(하위) 선택자</h2>
+    </div>
+    <div>
+      <h1 id="title">css 기본 문법</h1>
+      <nav>
+        <h2>자손(하위) 선택자</h2>
+        <h2>자손(하위) 선택자</h2>
+      </nav>
+    </div>
+  </body>
+</html>

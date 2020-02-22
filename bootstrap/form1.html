@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <style>
+      .container {
+        margin-top: 50px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <filedset>
+            <legend>회원가입</legend>
+            <div class="form-group row">
+                <label for="userid" class="col-sm-2 col-form-label">아이디</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="userid"  name="userid"/>
+                <small id="useridHelpInline" class="text-muted">아이디는 6~15 자로 작성해 주세요</small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="userpwd" class="col-sm-2 col-form-label">비밀번호</label>
+                <div class="col-sm-8">
+                <input type="password" class="form-control" id="userpwd" name="userpwd"/>
+                <small id="userpwdHelpInline" class="text-muted">비밀번호는 특수문자(^%*#$)를 포함하여 8~20자 사이로 작성해 주세요</small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <!-- col-form-label을 쓰면 라벨이 좀 아래로 내려감 -->
+                <label for="usergender" class="col-sm-2 form-check-label">성별</label>
+                <div class="col-sm-8">
+                    <div class="form-check form-check-inline">
+                        <input  class="form-check-input"  type="radio"  name="gender"  id="male"  value="남"/>
+                        <label class="form-check-label" for="male">남</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input  class="form-check-input"  type="radio"  name="gender"  id="female"  value="여"/>
+                        <label class="form-check-label" for="female"">여</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="usertel" class="col-sm-2 col-form-label">전화번호</label>
+                <div class="col-sm-8">
+                <input type="text" class="form-control" id="usertel" name="usertel"/>
+                <small id="usertelHelpInline" class="text-muted">전화번호는 - 없이 입력해 주세요</small>
+                </div>
+            </div>
+            <div class="form-group row justify-content-center">
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-primary btn-sm">회원가입</button>
+                    <button type="reset" class="btn btn-danger btn-sm">취소</button>
+                </div>
+                <!-- <div class="col-sm-2">
+                    <button type="reset" class="btn btn-danger btn-sm">취소</button>
+                </div> -->
+            </div> 
+        </filedset>
+      </form>
+    </div>
+  </body>
+</html>

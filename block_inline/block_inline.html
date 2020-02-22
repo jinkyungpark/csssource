@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      h1 {
+        background-color: blue;
+        color: #fff;
+        /* width: 300px; */
+        display: inline;
+      }
+      span {
+        background-color: blue;
+        color: #fff;
+        width: 300px;
+        display: block;
+      }
+      p {
+        text-align: center;
+      }
+      p a {
+        background-color: blue;
+        color: #fff;
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        line-height: 40px;
+      }
+      .hidden {
+        display: none;
+      }
+      .services {
+        width: 800px;
+        border: 1px solid;
+        display: table;
+      }
+      .services div {
+        width: 50%;
+        display: table-cell;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <span>span tag</span>
+    <p>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+    </p>
+    <div class="hidden">Hidden Area</div>
+    <!--하위에 있는 자식 태그가 영향을 받는 것-->
+    <div class="services">
+      <div>Lorem ipsum</div>
+      <div>Lorem ipsum</div>
+    </div>
+  </body>
+</html>

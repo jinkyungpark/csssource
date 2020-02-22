@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <style>
+      body {
+        margin-top: 50px;
+        color: whitesmoke;
+      }
+      .container {
+        background: red;
+      }
+      [class^="col"] {
+        background: lightgrey;
+        border: 1px solid black;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- justify-content-md-center : col-md-auto 컬럼의 내용을 기준으로 가변으로 컬럼의 너비가 설정되며 내용물은 가운데 정렬
+           고정으로 써야하는 컬럼은 2개씩 4개만 쓴 상황, 나머지 8개 컬럼은 내용물에 의거해서 할당(col-md상황이니까)
+           col-lg : contanier max-width 는 960px(한 컬럼당 80px 이고 lg-2 이니까 160px + padding 좌,우 15px씩)
+           col-md : contanier max-width 는 720px(한 컬럼당 60px)
+      -->
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+          <!--992px 이상인 경우에는 lg 이고 작아지게 되면 col-->
+          1 of 3
+        </div>
+        <div class="col-md-auto">
+          이 내용이 만일에 길어지면 어떻게 되나요? 알아봅시다
+        </div>
+        <div class="col col-lg-2">
+          <!--992px 이상인 경우에는 lg 이고 작아지게 되면 col-->
+          3 of 3
+        </div>
+      </div>
+      <!-- 전체적으로 너비는 container 너비를 다 쓰는데 992px 이상일 경우에는 
+           3컬럼은 2개의 컬럼만 부여하고 2컬럼은 내용에 의거 부여하고, 1컬럼은 나머지 값 다 가지고  
+           991 이하는 col 이 작동하기 때문에 1,3 컬럼은 equal-width 이고, 2컬럼은 내용에 의거해서
+           1컬럼과 3컬럼의 너비는 동일하게(col)
+           하나의 컬럼으로 합쳐지는 break-point 는 col-md 이고
+      -->
+      <div class="row">
+        <div class="col">
+          <!--container너비를 equal-width-->
+          1 of 3
+        </div>
+        <div class="col-md-auto">
+          Variable width content
+        </div>
+        <div class="col col-lg-2">
+          3 of 3
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      .parent {
+        /* width: 500px; */
+        width: 100px; /* 자식요소의  min-width 동작여부를 알아보기 위해 수정 */
+        height: 300px;
+        border: 4px solid tomato;
+        margin: 20px;
+      }
+      .child {
+        /* width: 100%;  이 값은 주지 않아도 기본값이기 때문에 동작함*/
+        max-width: 400px;
+        min-width: 200px;
+        height: 200px;
+        background: orange;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>

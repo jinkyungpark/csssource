@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .mainmenu {
+        background: #333;
+        padding-left: 40px;
+      }
+      .mainmenu:after {
+        /* 이 부분이 없으면 .mainmenu에서 잡은 배경 안나옴*/
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .mainmenu ul {
+        background: #666;
+        /* visibility: hidden; 이렇게 하면 영역이 보이게 됨(글씨는 안 보여도)*/
+        display: none;
+      }
+      .mainmenu > li {
+        float: left;
+        list-style: none;
+        margin-right: 30px;
+        line-height: 35px;
+        color: #fff;
+      }
+      .mainmenu > li:hover ul {
+        display: block;
+        /* 서브 메뉴가 나타나는 걸 아무도 모르게 나타나야 함*/
+        position: absolute;
+      }
+      .mainmenu > li ul li {
+        padding: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="mainmenu">
+      <li>
+        About Us
+        <ul>
+          <li>ceo greeting</li>
+          <li>history</li>
+          <li>vision</li>
+        </ul>
+      </li>
+      <li>
+        Works
+        <ul>
+          <li>Design</li>
+          <li>Mobile</li>
+        </ul>
+      </li>
+      <li>Services</li>
+      <li>Location</li>
+    </ul>
+  </body>
+</html>

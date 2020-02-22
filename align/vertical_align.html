@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 20pt;
+      }
+      .base {
+        background-color: lime;
+        font-size: 1.2em;
+      }
+      .vertical {
+        background-color: orange;
+        font-size: 0.6em;
+        vertical-align: baseline; /* baseline,sub,super,top,text-top,middle,bottom,text-bottom*/
+      }
+      h2 {
+        border: 1px solid red;
+      }
+      img {
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <span class="base">Lorem ipsum dolor</span>
+      <span class="vertical">Lorem</span>
+    </h1>
+    <h2>
+      <img src="../img/hadoop.jpg" alt="" />
+    </h2>
+  </body>
+</html>
