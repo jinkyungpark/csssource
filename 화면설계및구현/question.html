@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: white;
+      }
+      h3 {
+        text-align: center;
+      }
+      div {
+        margin-bottom: 5px;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+      }
+      body > div:nth-child(5) {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>입점문의</h3>
+    <div>
+      <label for="">성명</label>
+      <input type="text" />
+    </div>
+    <div>
+      <label for="">전화번호</label>
+      <input type="text" />
+    </div>
+    <div>
+      <label for="">이메일</label>
+      <input type="text" />
+    </div>
+    <div>
+      <input type="button" value="전송" />
+      <input type="button" value="취소" />
+    </div>
+  </body>
+</html>
