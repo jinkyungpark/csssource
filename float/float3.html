@@ -3,22 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
     <style>
-      span {
-        background: blue;
-        color: white;
-        margin: 10px;
+      body {
+        background-color: #ddd;
+      }
+      .box {
+        background-color: white;
+        /* height: 50px; */
+        overflow: hidden;
+      }
+      .left {
         float: left;
-        width: 50px;
-        height: 50px;
+      }
+      .right {
+        float: right;
+      }
+      .clearfix {
+        clear: both;
       }
     </style>
-    <title>Document</title>
   </head>
   <body>
-    <span>1</span>
-    <span>2</span>
-    <span>3</span>
+    <div class="box">
+      <img src="../img/left-arrow.png" alt="왼쪽 화살표" class="left" />
+      <img src="../img/right-arrow.png" alt="왼쪽 화살표" class="right" />
+      <div class="clearfix">Awesome</div>
+    </div>
   </body>
 </html>
