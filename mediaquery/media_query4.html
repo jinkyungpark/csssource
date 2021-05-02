@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Open Sans";
+        background: #ecf0f1;
+      }
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        order: 2;
+        background: white;
+        padding: 25px;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 25px;
+      }
+      .flexbg .left {
+        order: 1;
+        background: #3498db;
+      }
+      .flexbg .right {
+        order: 3;
+        background: #34495e;
+      }
+
+      /* 화면이 축소가 되면 3컬럼 이던 건 하나의 컬럼으로 떨어져야 함 */
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores corrupti minima expedita quas, rerum voluptas nobis, tenetur, inventore numquam sunt provident itaque sapiente? Ullam
+          architecto quod minima ut inventore magnam nihil? Voluptas laudantium commodi labore ut voluptate soluta et. Eos vero quam officiis debitis ex similique soluta architecto accusamus
+          distinctio quaerat laboriosam molestiae maxime corrupti fugit, minus iusto sunt. Iure, quasi pariatur maiores blanditiis facilis harum mollitia? Pariatur aspernatur aperiam exercitationem
+          quaerat iste veritatis, ut doloribus vero? Culpa repellat suscipit, minus corrupti ipsa similique praesentium omnis quia ducimus cum labore nam? Amet necessitatibus error facere, veniam
+          maxime repellat nemo nobis.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores corrupti minima expedita quas, rerum voluptas nobis, tenetur, inventore numquam sunt provident itaque sapiente? Ullam
+          architecto quod minima ut inventore magnam nihil? Voluptas laudantium commodi labore ut voluptate soluta et. Eos vero quam officiis debitis ex similique soluta architecto accusamus
+          distinctio quaerat laboriosam molestiae maxime corrupti fugit, minus iusto sunt. Iure, quasi pariatur maiores blanditiis facilis harum mollitia? Pariatur aspernatur aperiam exercitationem
+          quaerat iste veritatis, ut doloribus vero? Culpa repellat suscipit, minus corrupti ipsa similique praesentium omnis quia ducimus cum labore nam? Amet necessitatibus error facere, veniam
+          maxime repellat nemo nobis.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>You might have some latest posts here on the left</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>And some other widgets here on the right</p>
+      </aside>
+    </div>
+  </body>
+</html>

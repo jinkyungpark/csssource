@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+    <title>Media Queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      * {
-        padding: 0;
-        margin: 0;
+      body {
+        /* 기본 */
+        background: url(images/bg0.jpg) no-repeat fixed;
+        background-size: cover;
       }
-      .container {
-        background: yellow;
-        height: 100px;
-      }
-      @media screen and (max-width: 960px) {
-        .container {
-          background: yellowgreen;
+      @media screen and (max-width: 1024px) {
+        /* 769~1024 */
+        body {
+          background: url(images/bg1.jpg) no-repeat fixed;
+          background-size: cover;
         }
       }
-      @media screen and (max-width: 720px) {
-        .container {
-          background: blueviolet;
+      @media screen and (max-width: 768px) {
+        /* 321 ~ 768 */
+        body {
+          background: url(images/bg2.jpg) no-repeat fixed;
+          background-size: cover;
         }
       }
-      @media screen and (max-width: 540px) {
-        .container {
-          background: crimson;
+      @media screen and (max-width: 320px) {
+        /* ~ 320*/
+        body {
+          background: url(images/bg3.jpg) no-repeat fixed;
+          background-size: cover;
         }
       }
     </style>
-    <title>Document</title>
   </head>
-  <body>
-    <div class="container"></div>
-  </body>
+
+  <body></body>
 </html>
