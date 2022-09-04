@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>align-items</title>
+  </head>
+  <style>
+    .wrap {
+      display: flex;
+      height: 500px;
+      width: 90%;
+      margin: 20px auto;
+      border: 2px solid;
+      /* 교차축의 방향 지정시 사용 
+         stretch(기본값), flex-start, flex-end, center
+      */
+      align-items: baseline;
+    }
+    .wrap div {
+      width: 100%;
+      height: 200px;
+    }
+    .wrap div:nth-child(1) {
+      background: red;
+    }
+    .wrap div:nth-child(2) {
+      background: blue;
+    }
+    .wrap div:nth-child(3) {
+      background: yellow;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <div>box1</div>
+      <div>box2</div>
+      <div>box3</div>
+    </div>
+  </body>
+</html>

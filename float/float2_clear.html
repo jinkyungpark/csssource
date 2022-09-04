@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      clearfix::after {
+        content: "";
+        clear: both;
+        display: block; /* after 뒤에 오는 건 block으로 처리하기 위해서 */
+      }
+      .box {
+        width: 150px;
+        height: 100px;
+        background: tomato;
+        color: white;
+        font-size: 30px;
+        margin: 10px;
+        float: left;
+        /* float: right; */
+      }
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background: violet;
+        clear: left;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="clearfix">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+    <div class="box1">4</div>
+  </body>
+</html>

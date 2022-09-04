@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      .container {
+        border: 4px solid;
+        display: flex;
+      }
+      .container .item {
+        width: 100px;
+        height: 100px;
+        background: tomato;
+        border: 4px dashed red;
+        border-radius: 10px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item1 {
+        order: 1;
+      }
+
+      .item4 {
+        order: 1; /*item1과 값이 같다 하더라도 늦게 만들어졌기 때문에 뒤로 감 */
+      }
+      .item6 {
+        order: -1;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- item 의 순서 설정 / 음수 값 지정 가능 / 기본값 0 / 
+    order가 같다면 태그 순서
+    -->
+    <!-- div.item.item$*6{$} -->
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+      <div class="item item5">5</div>
+      <div class="item item6">6</div>
+    </div>
+  </body>
+</html>

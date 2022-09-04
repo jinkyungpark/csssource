@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Media Queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        /* 기본 */
+        background: url(images/bg0.jpg) no-repeat fixed;
+        background-size: cover;
+      }
+      @media screen and (max-width: 1024px) {
+        /* 769~1024 */
+        body {
+          background: url(images/bg1.jpg) no-repeat fixed;
+          background-size: cover;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        /* 321 ~ 768 */
+        body {
+          background: url(images/bg2.jpg) no-repeat fixed;
+          background-size: cover;
+        }
+      }
+      @media screen and (max-width: 320px) {
+        /* ~ 320*/
+        body {
+          background: url(images/bg3.jpg) no-repeat fixed;
+          background-size: cover;
+        }
+      }
+    </style>
+  </head>
+
+  <body></body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      input {
+        width: 150px;
+        outline: none; /*input 의 경우에는 border로 제어 안함 */
+        border: 1px solid lightgray;
+        transition: 0.4s;
+        padding: 5px 10px;
+      }
+      /*포커스를 받으면*/
+      input:focus {
+        width: 200px;
+        border-color: red;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" />
+  </body>
+</html>

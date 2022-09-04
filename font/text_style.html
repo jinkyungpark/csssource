@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "돋움", dotum, Helvetica, sans-serif;
+        font-size: 12px;
+      }
+      /* h1 {
+        font-size: medium;  16px*/
+      /* font-size: xx-large; */
+      /* font-size: 2em; 2 * 12px */
+      /* font-size: 150%;    http://pxtoem.com/ 참고  12px * 1.5em       
+      }*/
+      h1 {
+        font-size: 3em;
+        font-weight: 700; /*normal, bold, 400(기본값), 700, 900(마지막값)*/
+        text-decoration: underline; /* line-through, overline 등 */
+        letter-spacing: 0.12em; /*글자 하나하나의 간격*/
+      }
+      em,
+      address {
+        font-style: normal;
+      }
+      del {
+        font-style: italic; /* oblique */
+      }
+      .left {
+        text-align: left;
+        word-spacing: 2em;
+      }
+      .right {
+        text-align: right;
+      }
+      .center {
+        text-align: center;
+        line-height: 40px; /* 한 줄의 높이*/
+      }
+      h2 {
+        width: 300px;
+        height: 60px;
+        border: 2px solid red;
+        text-align: center;
+        line-height: 60px; /* 줄 높이를 60px로 지정함으로써 손쉽게 가운데로 오게 할 수 있음(한줄일경우)*/
+      }
+      h3 {
+        border: 1px solid;
+        text-indent: 20px; /* -20 을 주게 되면 내여쓰기 가 됨*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="area">
+      <h1>글자의 정렬</h1>
+      <h2>line height</h2>
+      <h3>Logo</h3>
+      <del>1,000,000</del>
+      <p class="left">
+        <em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit. Nam,
+        placeat! Eos, nisi fugit! Et architecto tempore sunt temporibus maiores,
+        repellat minus, facilis officiis amet veniam culpa necessitatibus, nemo
+        magni enim.
+      </p>
+      <p class="center">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam a sint,
+        id sunt nostrum, itaque, error architecto voluptatem aliquam magnam
+        eaque et facere impedit laborum. Ipsam nihil doloribus nostrum
+        veritatis!
+      </p>
+      <p class="right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dolore
+        tenetur cupiditate, illum impedit tempore ut quisquam alias eaque autem,
+        facilis pariatur unde amet repudiandae vel sint fugit porro! Itaque.
+      </p>
+      <address>
+        &copy; all right reserved. <br />
+        contact us.
+      </address>
+    </div>
+  </body>
+</html>

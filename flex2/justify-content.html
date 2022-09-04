@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>justify-content</title>
+    <style>
+      /*flex 레이아웃의 핵심*/
+      .container {
+        display: flex;
+        /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+        justify-content: space-evenly;
+        border: 1px solid;
+      }
+      .container div {
+        width: 100px;
+        height: 100px;
+      }
+      .container div:first-child {
+        background: red;
+      }
+      .container div:nth-child(2) {
+        background: blue;
+      }
+      .container div:last-child {
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!--div.parent>div{box}*3-->
+    <div class="container">
+      <div>box1</div>
+      <div>box2</div>
+      <div>box3</div>
+    </div>
+  </body>
+</html>

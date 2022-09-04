@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>컨테이너 크기를 모르는 경우</title>
+    <style>
+      body {
+        padding-top: 100px;
+      }
+      .container {
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        background: yellow;
+        /* 이렇게 주어야 기준이 자기자신이기 때문에 안 움직임. 안 움직이고 중간에 계속 위치해야 함 */
+        position: relative;
+      }
+
+      .box {
+        height: 100px;
+        position: absolute;
+      }
+
+      .a {
+        background: red;
+        right: 100%;
+        top: 100px; /*노란색 박스의 크기가 300px 이므로*/
+      }
+      .b {
+        background: green;
+        right: 200px;
+        top: 100px;
+      }
+      .c {
+        background: blue;
+        left: 100%;
+        bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box a">box aaaaaa</div>
+      <div class="box b">box b</div>
+      <div class="box c">box cc</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos soluta
+      dolores assumenda recusandae asperiores, nulla temporibus iure praesentium
+      enim eum incidunt nesciunt, at omnis unde explicabo. Praesentium
+      accusantium deleniti inventore!
+    </p>
+  </body>
+</html>

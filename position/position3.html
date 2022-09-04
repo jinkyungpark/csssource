@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        width: 500px;
+        height: 200px;
+        border: 2px solid red;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        /* margin: auto; 이 방법은 수직은 가운데 안 옴*/
+        margin-left: -250px; /* p 태그 위치의 실체가 움직이도록 margin 을 조절해야 함*/
+        margin-top: -100px; /* p 태그의 width, height 값의 반을 움직이도록 한 것*/
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+  </body>
+</html>
