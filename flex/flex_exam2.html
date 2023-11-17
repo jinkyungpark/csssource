@@ -2,43 +2,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu Style</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">  
-  <style>
-    ㅓㅏ
-  </style>
+  <title>CSS3 Loading Animations</title> 
+  <style>   
+    *{
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Open Sans";
+      background: #ecf0f1;
+    }
+    .wrapper {
+      max-width: 60rem;
+      width: 100%;
+      margin: 2rem auto;
+    }
+    </style>
 </head>
 <body>
-<div class="wrapper">
-  <nav>
-    <div class="menu_item">
-      <a href="#design">
-        <i class="fa fa-paint-brush"></i>
-        <span>Design</span>
-      </a>
-    </div>
-    <div class="menu_item">
-      <a href="#code">
-        <i class="fa fa-code"></i>
-        <span>Coding</span>
-      </a>
-    </div>
-    <div class="menu_item">
-      <a href="#ecommerce">
-        <i class="fa fa-credit-card"></i>
-        <span>E-Commerce</span>
-      </a>
-    </div>
-    <div class="menu_item">
-      <a href="#marketing">
-        <i class="fa fa-bullhorn"></i>
-        <span>Marketing</span>
-      </a>
-    </div>
-
-  </nav>
-
-</div>
+<div class="wrapper flexbg">
+  <main>
+    <p>My father had a small estate in Nottinghamshire: I was the third of five sons. He sent me to Emanuel College in Cambridge at fourteen years old, where I resided three years, and applied myself close to my studies; but the charge of maintaining me, although I had a very scanty allowance, being too great for a narrow fortune, I was bound apprentice to Mr. James Bates, an eminent surgeon in London, with whom I continued four years. </p>
+    <p>My father now and then sending me small sums of money, I laid them out in learning navigation, and other parts of the mathematics, useful to those who intend to travel, as I always believed it would be, some time or other, my fortune to do. When I left Mr. Bates, I went down to my father: where, by the assistance of him and my uncle John, and some other relations, I got forty pounds, and a promise of thirty pounds a year to maintain me at Leyden: there I studied physic two years and seven months, knowing it would be useful in long voyages.</p>
+  </main>
+  <aside class="sidebar left">
+    <p>You might have some latest posts here on the left</p>
+  </aside>
+  <aside class="sidebar right">
+    <p>And some other widgets here on the right</p>
+  </aside>
+</div> 
 </body>
 </html>

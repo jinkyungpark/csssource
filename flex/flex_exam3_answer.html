@@ -5,11 +5,16 @@
     <title>Flexbox Project 1: Menu i</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet prefetch"
-      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <style>
       * {
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
       }
       body {
@@ -20,14 +25,13 @@
         justify-content: space-evenly;
         background-color: #eee;
         list-style: none;
-        padding-left: 0;
         height: 60px;
       }
       .main-nav .menu li {
         padding: 4px;
         padding-top: 14px;
       }
-      .main-nav .fa {
+      .main-nav .fa-solid {
         display: inline-block;
         vertical-align: top; /* 내려와 있던 아이콘이 위로 올라가줌*/
         font-size: 14px;
@@ -35,12 +39,12 @@
       .main-nav .menu-text {
         display: inline-block;
       }
-      .main-nav h4,
-      .main-nav p {
-        margin: 0;
-      }
       .main-nav p {
         font-size: 12px;
+      }
+      .main-nav a {
+        text-decoration: none;
+        color: black;
       }
     </style>
   </head>
@@ -49,8 +53,8 @@
     <nav class="main-nav">
       <ul class="menu">
         <li class="menu-home">
-          <a>
-            <i class="fa fa-home"></i>
+          <a href="">
+            <i class="fa-solid fa-house"></i>
             <div class="menu-text">
               <h4>HOME</h4>
               <p>Start Here</p>
@@ -58,8 +62,8 @@
           </a>
         </li>
         <li class="menu-products">
-          <a>
-            <i class="fa fa-shopping-basket"></i>
+          <a href="">
+            <i class="fa-solid fa-cart-shopping"></i>
             <div class="menu-text">
               <h4>PRODUCTS</h4>
               <p>Shop Now</p>
@@ -67,8 +71,8 @@
           </a>
         </li>
         <li class="menu-blog">
-          <a>
-            <i class="fa fa-pencil"></i>
+          <a href="">
+            <i class="fa-solid fa-pencil"></i>
             <div class="menu-text">
               <h4>BLOG</h4>
               <p>My Thoughts</p>
@@ -76,8 +80,8 @@
           </a>
         </li>
         <li class="menu-contact">
-          <a>
-            <i class="fa fa-phone"></i>
+          <a href="">
+            <i class="fa-solid fa-phone"></i>
             <div class="menu-text">
               <h4>CONTACT</h4>
               <p>Get in Touch</p>

@@ -11,14 +11,18 @@
       height: 400px; /* 높이 설정을 하게 되면 아이템들간의 간격이 생겨버림 */
       border: 2px solid;
       display: flex;
-      flex-wrap: wrap; /* align-content가 의미가 있으려면 무조건 2줄이상*/
-      align-content: center; /* 기본값이니까 안 줘도 늘어남*/
-      /* align-content: space-around; stretch(기본값), flex-start, flex-end, center, space-between, space-around */
+      flex-wrap: wrap;
+      /* align-content : stretch 가 들어간 상태 */
+      align-items: baseline; /* stretch, flex-start, flex-end, center, baseline */
     }
     .container .item {
-      width: 200px;
+      width: 120px;
       height: 100px;
       border: 3px dashed;
+      font-size: 40px;
+      display: flex;
+      justify-content: center; /* 주축의 정렬 */
+      align-items: center; /* 교차축의 정렬 */
     }
     .container .item:first-child {
       background: red;
@@ -28,12 +32,15 @@
     }
     .container .item:nth-child(3) {
       background: green;
+      /* font-size: 50px; */
     }
     .container .item:nth-child(4) {
       background: magenta;
+      height: 80px;
     }
     .container .item:nth-child(5) {
       background: darkgoldenrod;
+      height: 60px;
     }
     .container .item:last-child {
       background: yellow;
