@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    /* 기본 화면 */
+    .container {
+      background: yellow;
+      height: 100px;
+    }
+
+    /* 태블릿 가로 및 저해상도 노트북, pc화면 */
+    @media screen and (max-width: 1280px) {
       .container {
-        background: yellow;
-        height: 100px;
+        background: darkorange;
       }
-      @media screen and (max-width: 960px) {
-        .container {
-          background: yellowgreen;
-        }
+    }
+
+
+    /* 태블릿 세로 화면 */
+    @media screen and (max-width: 1024px) {
+      .container {
+        background: yellowgreen;
       }
-      @media screen and (max-width: 720px) {
-        .container {
-          background: blueviolet;
-        }
+    }
+
+    /* 저해상도 태블릿 */
+    @media screen and (max-width: 767px) {
+      .container {
+        background: blueviolet;
       }
-      @media screen and (max-width: 540px) {
-        .container {
-          background: crimson;
-        }
+    }
+
+    /* 스마트폰 */
+    @media screen and (max-width: 480px) {
+      .container {
+        background: crimson;
       }
-    </style>
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container"></div>
-  </body>
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container"></div>
+</body>
+
 </html>

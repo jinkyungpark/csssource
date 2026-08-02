@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./responsiveweb.css">
+    <title>HTML & CSS</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        #wrapper {
+            display: grid;
+            gap: 12px;
+        }
+
+        #wrapper>* {
+            padding: 1em;
+            font-size: 1.2em;
+            color: royalblue;
+            font-weight: bold;
+            background-color: lightblue;
+        }
+
+        header {
+            position: relative;
+            min-width: 80px;
+        }
+
+        nav ul {
+            padding-left: 0.5em;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 1em;
+            color: #333;
+        }
+
+        #menu {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0 1em;
+            height: 64px;
+            line-height: 64px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        main div {
+            margin: 1em;
+            padding: 1em;
+            height: 67vh;
+            color: #333;
+            font-weight: normal;
+            background-color: yellow;
+        }
+
+        footer {
+            height: 200px;
+        }
+
+        /* 미디어 쿼리 작성 */
+        /*    ~ 768px */
+        @media screen and (max-width: 768px) {
+
+            /* nav 메뉴 숨김 */
+            nav {
+                display: none;
+            }
+
+            /* 메뉴라는 글자에 마우스를 올리면 메뉴가 오른쪽에서 보여지기 */
+            #menu:hover+nav {
+                /* display: inherit; 도 가능*/
+                display: block;
+                text-align: right;
+            }
+
+            /* 메뉴가 오른쪽에서 보여지면서 li 메뉴를 block 으로 변경해서 아래로 보여지도록 */
+            #menu:hover+nav li {
+                display: block;
+                margin: 0.6em;
+            }
+        }
+
+        /*  769px ~ */
+        @media screen and (min-width: 769px) {
+
+            /* 메뉴라는 글자 숨김 */
+            #menu {
+                display: none;
+            }
+
+            /* 첫번째 컬럼 200px, 나머지 공간은 모두 차지 */
+            #wrapper {
+                grid-template-columns: 200px 1fr;
+            }
+
+            /* 헤더,footer 영역은 merge */
+            header,
+            footer {
+                /* grid-column: 1 / -1; */
+                grid-column: 1 / 3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            header
+            <div id="menu">메뉴</div>
+            <nav>
+                <ul>
+                    <li>홈</li>
+                    <li>회사소개</li>
+                    <li>제품소개</li>
+                    <li>커뮤니티</li>
+                    <li>고객센터</li>
+                </ul>
+            </nav>
+        </header>
+        <aside>
+            aside
+        </aside>
+        <main>
+            main
+            <div>content</div>
+        </main>
+        <footer>
+            footer
+        </footer>
+    </div>
+</body>
+
+</html>
